@@ -15,7 +15,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Meta Pixel Code (Initialisation de base : enregistre uniquement les visites de pages, pas les contacts) -->
+    <!-- Meta Pixel Code -->
     <script>
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -33,14 +33,12 @@
     /></noscript>
     <!-- Fin du code du pixel Meta -->
 
-    <!-- Script de suivi : Déclenche l'événement 'Contact' UNIQUEMENT au clic sur un lien WhatsApp -->
+    <!-- Script de suivi -->
     <script>
     document.addEventListener('DOMContentLoaded', function () {
-        // Cible tous les liens contenant "wa.me" (vos boutons WhatsApp)
         document.querySelectorAll('a[href*="wa.me"]').forEach(function (button) {
             button.addEventListener('click', function () {
                 if (typeof fbq === 'function') {
-                    // Envoie l'événement 'Contact' à Meta seulement maintenant
                     fbq('track', 'Contact');
                 }
             });
@@ -99,6 +97,7 @@
                             <li>Diagnostic et conseils</li>
                             <li>Orientation thérapeutique</li>
                             <li>Durée indicative : 20 à 30 minutes</li>
+                            <li><strong>Tarif : 30 $</strong></li>
                         </ul>
                         <a
                             href="https://wa.me/243995271831?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous%20pour%20une%20consultation%20dentaire."
@@ -106,7 +105,7 @@
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            WhatsApp - Prendre rendez-vous
+                            Prenez rendez-vous avec nous
                         </a>
                     </div>
                 </article>
@@ -135,7 +134,7 @@
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            WhatsApp - Nous contacter
+                            Contactez-nous
                         </a>
                     </div>
                 </article>
@@ -163,7 +162,7 @@
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            WhatsApp - Demander un avis
+                            Contactez-nous
                         </a>
                     </div>
                 </article>
@@ -193,7 +192,7 @@
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            WhatsApp - Nous contacter
+                            Contactez-nous
                         </a>
                     </div>
                 </article>
@@ -222,7 +221,7 @@
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            WhatsApp - Prendre rendez-vous
+                            Prenez rendez-vous avec nous
                         </a>
                     </div>
                 </article>
@@ -251,7 +250,7 @@
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            WhatsApp - En savoir plus
+                            Contactez-nous
                         </a>
                     </div>
                 </article>
@@ -280,7 +279,7 @@
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            WhatsApp - Demander un bilan
+                            Prenez rendez-vous avec nous
                         </a>
                     </div>
                 </article>
@@ -309,7 +308,7 @@
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            WhatsApp - Parler à l'équipe
+                            Contactez-nous
                         </a>
                     </div>
                 </article>
@@ -338,7 +337,7 @@
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            WhatsApp - Nous contacter
+                            Contactez-nous
                         </a>
                     </div>
                 </article>
@@ -346,7 +345,7 @@
             </div>
 
             <p class="price-note">
-                Les tarifs définitifs sont communiqués par le cabinet
+                Les tarifs des autres soins sont communiqués par le cabinet
                 après échange ou examen, selon les besoins de chaque patient.
             </p>
         </div>
@@ -393,7 +392,7 @@
                     </div>
                 </div>
                 <a href="#contact" class="btn-primary">
-                    Contacter le cabinet
+                    Contactez-nous
                 </a>
             </div>
         </div>
@@ -419,7 +418,7 @@
                 rel="noopener noreferrer"
                 class="contact-whatsapp"
             >
-                WhatsApp - Écrire au cabinet
+                Contactez-nous
             </a>
         </div>
     </section>
